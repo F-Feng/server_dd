@@ -148,7 +148,7 @@ function Start() {
   echo -e "\nPlease input the password:"
   read P
 
-  echo -e "\nPlease select an OS:"
+  echo -e "\nPlease select an OS:    !!! aws  cloud will be lost if you choose  debian10"
   echo "  1) Debian 9"
   echo "  2) Debian 10"
   echo "  3) Ubuntu 16.04"
