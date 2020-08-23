@@ -1,4 +1,4 @@
-用别人的脚本改了一点，可以自定义密码，可以dd   debian9 , debian10 , ubuntu16 , ubuntu18
+用别人的脚本改了一点，可以自定义密码
 
 azure  ， aws 都可以用
 
