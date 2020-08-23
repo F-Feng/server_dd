@@ -149,6 +149,9 @@ function Start() {
   read P
 
   echo -e "\nPlease select an OS:  "
+  echo "  5) CentOS 7.7 (DD Image)"
+  echo "  6) CentOS 7.6 (ServerSpeeder Avaliable)"
+  echo "  7) CentOS 6"
   echo "  1) Debian 9"
   echo "  2) Debian 10     !!! aws  cloud will be lost if you choose  debian10  ,  azure is ok for all OS"
   echo "  3) Ubuntu 16.04"
@@ -157,6 +160,9 @@ function Start() {
   echo -ne "\nYour option: "
   read N
   case $N in
+    5)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh $NETSTR -dd 'https://api.moetools.net/get/centos-7-image' $DMIRROR  -p $P ;;
+    6)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh $NETSTR -dd 'https://api.moetools.net/get/centos-76-image' $DMIRROR  -p $P ;;
+    7)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -c 6.10 -v 64 -a $NETSTR $CMIRROR  -p $P ;;
     1)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 9 -v 64 -a $NETSTR $DMIRROR -p $P;;
     2)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 10 -v 64 -a $NETSTR $DMIRROR -p $P;;
     3)  read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -u 16.04 -v 64 -a $NETSTR $UMIRROR -p $P ;;
